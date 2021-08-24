@@ -7,8 +7,8 @@ import {isPasswordAllowed, userToJSON} from '../auth'
 // https://github.com/kentcdodds/rtl-css-js/blob/96ec6a000d8fe03ae7d45603ece81eb185bf0618/src/__tests__/index.js
 
 describe('isPasswordAllowed only allows some passwords', () => {
-  const allowedPasswords = []
-  const disallowedPasswords = []
+  const allowedPasswords = ['cdasdas.fds842']
+  const disallowedPasswords = ['', 'ffffffff', '888888888']
 
   allowedPasswords.forEach(password => {
     test(`allows ${password}`, () => {
